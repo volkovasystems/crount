@@ -1,0 +1,44 @@
+{
+  "name": "crount",
+  "version": "0.0.0",
+  "description": "Count element occurrence in array.",
+  "main": "crount.js",
+  "support": "crount.support.js",
+  "deploy": "crount.deploy.js",
+  "browser": "crount.deploy.js",
+  "scripts": {
+    "build": "babel crount.js --out-file crount.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha crount-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/crount.git"
+  },
+  "keywords": [
+    "count",
+    "element",
+    "occurrence",
+    "array",
+    "crount"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/crount/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/crount#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "doubt": "^0.26.0",
+    "eqe": "^0.2.0",
+    "raze": "^0.29.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.5.1"
+  }
+}
