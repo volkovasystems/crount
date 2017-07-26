@@ -1,33 +1,33 @@
 {
-  "name": "crount",
-  "version": "0.2.0",
-  "description": "Count element occurrence in array.",
-  "main": "crount.deploy.js",
-  "support": "crount.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "count",
-    "element",
-    "occurrence",
-    "array",
-    "crount"
-  ],
-  "homepage": "https://github.com/volkovasystems/crount",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "doubt": "^0.30.0",
-    "eqe": "^0.4.0",
-    "raze": "^0.33.0"
-  }
+	"name": "crount",
+	"version": "0.3.0",
+	"description": "Count element occurrence in array.",
+	"main": "crount.deploy.js",
+	"support": "crount.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"count",
+		"element",
+		"occurrence",
+		"array",
+		"crount"
+	],
+	"homepage": "https://github.com/volkovasystems/crount",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"doubt": "^0.34.0",
+		"eqe": "^0.5.0",
+		"raze": "^0.34.0"
+	}
 }
