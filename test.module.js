@@ -72,7 +72,7 @@ const path = require( "path" );
 //: @server:
 
 describe( "crount", ( ) => {
-	
+
 	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
 		it( "should be equal to 2" , ( ) => {
 
@@ -89,17 +89,17 @@ describe( "crount", ( ) => {
 		} );
 	} );
 
-	
+
 } );
 
 
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "crount", ( ) => {
-	
+
 	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
 		it( "should be equal to 2" , ( ) => {
 
@@ -116,7 +116,7 @@ describe( "crount", ( ) => {
 		} );
 	} );
 
-	
+
 } );
 
 //: @end-client
@@ -126,40 +126,38 @@ describe( "crount", ( ) => {
 
 describe( "crount", ( ) => {
 
-	
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
-
 	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
-		it( "should be equal to 2" , ( ) => {
+		it( `"should be equal to 2"`, ( ) => {
 
-			assert.equal(crount ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return crount( [ 1, 2, 3, 3, 4 ], 3 );
+				}
+
+			).value;
+
+			assert.equal( result, 2 );
 
 		} );
 	} );
 
 	describe( `"crount( [ ], 1 )"`, ( ) => {
-		it( "should be equal to 0", ( ) => {
+		it( `"should be equal to 0"`, ( ) => {
 
-			assert.equal(crount ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return crount( [ ], 1 );
+				}
+
+			).value;
+
+			assert.equal( result, 0 );
 
 		} );
 	} );
-	
+
 } );
 
 //: @end-bridge
-
-
-
-
-
-// const assert = require( "assert" );
-// const crount = require( "./crount.js" );
-
-// assert.equal( crount( [ 1, 2, 3, 3, 4 ], 3 ), 2, "should be equal to 2" );
-
-// assert.equal( crount( [ ], 1 ), 0, "should be equal to 0" );
-
-// console.log( "ok" );
