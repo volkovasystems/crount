@@ -127,7 +127,7 @@ describe( "crount", ( ) => {
 describe( "crount", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
-	
+
 	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
 		it( `"should be equal to 2"`, ( ) => {
 
@@ -143,6 +143,7 @@ describe( "crount", ( ) => {
 
 		} );
 	} );
+	
 
 	describe( `"crount( [ ], 1 )"`, ( ) => {
 		it( `"should be equal to 0"`, ( ) => {
