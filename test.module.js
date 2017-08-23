@@ -73,7 +73,7 @@ const path = require( "path" );
 
 describe( "crount", ( ) => {
 
-	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
+	describe( "`crount( [ 1, 2, 3, 3, 4 ], 3 )`", ( ) => {
 		it( "should be equal to 2" , ( ) => {
 
 			assert.equal( crount( [ 1, 2, 3, 3, 4 ], 3 ), 2 );
@@ -81,14 +81,13 @@ describe( "crount", ( ) => {
 		} );
 	} );
 
-	describe( `"crount( [ ], 1 )"`, ( ) => {
+	describe( "`crount( [ ], 1 )`", ( ) => {
 		it( "should be equal to 0", ( ) => {
 
 			assert.equal( crount( [ ], 1 ), 0 );
 
 		} );
 	} );
-
 
 } );
 
@@ -100,7 +99,7 @@ describe( "crount", ( ) => {
 
 describe( "crount", ( ) => {
 
-	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
+	describe( "`crount( [ 1, 2, 3, 3, 4 ], 3 )`", ( ) => {
 		it( "should be equal to 2" , ( ) => {
 
 			assert.equal( crount( [ 1, 2, 3, 3, 4 ], 3 ), 2 );
@@ -108,14 +107,13 @@ describe( "crount", ( ) => {
 		} );
 	} );
 
-	describe( `"crount( [ ], 1 )"`, ( ) => {
+	describe( "`crount( [ ], 1 )`", ( ) => {
 		it( "should be equal to 0", ( ) => {
 
 			assert.equal( crount( [ ], 1 ), 0 );
 
 		} );
 	} );
-
 
 } );
 
@@ -128,8 +126,8 @@ describe( "crount", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( `"crount( [ 1, 2, 3, 3, 4 ], 3 )"`, ( ) => {
-		it( `"should be equal to 2"`, ( ) => {
+	describe( "`crount( [ 1, 2, 3, 3, 4 ], 3 )`", ( ) => {
+		it( "should be equal to 2", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
@@ -143,10 +141,10 @@ describe( "crount", ( ) => {
 
 		} );
 	} );
-	
 
-	describe( `"crount( [ ], 1 )"`, ( ) => {
-		it( `"should be equal to 0"`, ( ) => {
+
+	describe( "`crount( [ ], 1 )`", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
