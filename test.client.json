@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-23T09:46:17.689Z",
+	"end": "2017-08-23T09:46:55.242Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "crount",
+			"duration": 0,
+			"start": "2017-08-23T09:46:54.895Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "crount",
+			"duration": 169,
+			"start": "2017-08-23T09:46:54.895Z",
+			"end": "2017-08-23T09:46:55.064Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-23T09:46:54.897Z",
+					"end": "2017-08-23T09:46:54.897Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "crount",
+					"associatedTest": "should be equal to 2"
+				},
+				{
+					"start": "2017-08-23T09:46:54.998Z",
+					"end": "2017-08-23T09:46:54.998Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "crount",
+					"associatedTest": "should be equal to 2"
+				},
+				{
+					"start": "2017-08-23T09:46:55.000Z",
+					"end": "2017-08-23T09:46:55.000Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "crount",
+					"associatedTest": "should be equal to 0"
+				},
+				{
+					"start": "2017-08-23T09:46:55.064Z",
+					"end": "2017-08-23T09:46:55.064Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "crount",
+					"associatedTest": "should be equal to 0"
+				},
+				{
+					"start": "2017-08-23T09:46:55.064Z",
+					"end": "2017-08-23T09:46:55.064Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "crount"
+				}
+			]
+		},
+		{
+			"name": "`crount( [ 1, 2, 3, 3, 4 ], 3 )`",
+			"duration": 103,
+			"start": "2017-08-23T09:46:54.896Z",
+			"end": "2017-08-23T09:46:54.999Z",
+			"tests": [
+				{
+					"name": "should be equal to 2",
+					"start": "2017-08-23T09:46:54.896Z",
+					"end": "2017-08-23T09:46:54.998Z",
+					"duration": 102,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`crount( [ ], 1 )`",
+			"duration": 65,
+			"start": "2017-08-23T09:46:54.999Z",
+			"end": "2017-08-23T09:46:55.064Z",
+			"tests": [
+				{
+					"name": "should be equal to 0",
+					"start": "2017-08-23T09:46:54.999Z",
+					"end": "2017-08-23T09:46:55.064Z",
+					"duration": 65,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

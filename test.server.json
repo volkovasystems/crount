@@ -1,46 +1,46 @@
 {
-  "stats": {
-    "suites": 3,
-    "tests": 2,
-    "passes": 2,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-18T00:55:00.206Z",
-    "end": "2017-08-18T00:55:00.213Z",
-    "duration": 7
-  },
-  "tests": [
-    {
-      "title": "should be equal to 2",
-      "fullTitle": "crount \"crount( [ 1, 2, 3, 3, 4 ], 3 )\" should be equal to 2",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "crount \"crount( [ ], 1 )\" should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to 2",
-      "fullTitle": "crount \"crount( [ 1, 2, 3, 3, 4 ], 3 )\" should be equal to 2",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "crount \"crount( [ ], 1 )\" should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-23T09:46:16.510Z",
+		"end": "2017-08-23T09:46:16.516Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to 2",
+			"fullTitle": "crount `crount( [ 1, 2, 3, 3, 4 ], 3 )` should be equal to 2",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "crount `crount( [ ], 1 )` should be equal to 0",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 2",
+			"fullTitle": "crount `crount( [ 1, 2, 3, 3, 4 ], 3 )` should be equal to 2",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "crount `crount( [ ], 1 )` should be equal to 0",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
